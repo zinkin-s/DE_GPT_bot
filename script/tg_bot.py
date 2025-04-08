@@ -10,6 +10,8 @@ URL = "https://llm.api.cloud.yandex.net/foundationModels/v1/completion" # URL м
 folder_id = os.environ.get('FOLDER_ID') # folder_id облака
 tg_tocken = os.environ.get('TG_TOCKEN') # telegram tocken
 API_key = os.environ.get('API_KEY') # API ключ
+endpoint_url = os.environ.get('ENDPOINT_URL') # endpoint_url базы данных
+
 
 def handler(event, context):
     """Обработчик запроса serverless-функции telegram-бота
@@ -38,7 +40,7 @@ def handler(event, context):
             # подключение к БД
             ydb_doc_api_client = boto3.resource(
                 'dynamodb',
-                endpoint_url = 'https://docapi.serverless.yandexcloud.net/ru-central1/b1g37i3tjbefiamht52d/etn4rq6puh5giq1b7c70'
+                endpoint_url = endpoint_url
             ) 
             # загрузка таблицы
             table = ydb_doc_api_client.Table('slslogapi')
