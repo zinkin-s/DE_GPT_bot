@@ -1,5 +1,5 @@
-# DE_GPT_bot
+# Telegram GPT Bot
 
-[Дашборд](https://datalens.yandex/qyex8bxlkfkgc) 
+[Дашборд с результатами анализа логов: ](https://datalens.yandex/qyex8bxlkfkgc) 
 
-[тг-бот](https://t.me/de_prj_bot)
+[!Ссылка на тг-бот](https://t.me/de_prj_bot)
